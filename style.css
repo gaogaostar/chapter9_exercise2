@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  /*width: 100%;→不要*/
+  height: 50px;
+  background-color: #FF9A4B;
+}
+
+main {
+  width: 960px;
+  display: flex;
+  /*justify-content: center;→不要*/
+  margin: 50px auto;
+  column-gap: 30px;
+}
+
+.box {
+  width: 300px;
+  background-color: #EEEEEE;
+  padding: 10px;/*←追加*/
+  position: relative;
+  
+}
+
+.tag {
+  background-color: #FF9A4B;
+  color: #FFFFFF;
+  position: absolute;
+  top: 0;/*←追加*/
+  left: 0;/*←追加*/
+}
+
+.image {
+  height: 150px;
+  background-size: cover;
+  background-position: bottom;/*修正「center→bottom」;*/
+}
+
+.step1-image {
+  background-image: url("img/flow01.png");
+}
+
+.step2-image {
+  background-image: url("img/flow02.png");
+}
+
+.step3-image {
+  background-image: url("img/flow03.png");
+}
+
+.title {
+  margin: 15px 0 5px 0;
+}
+
+footer {
+  /*width: 100%;→不要*/
+  height: 50px;
+  background-color: #AAAAAA;
+}
