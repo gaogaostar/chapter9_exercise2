@@ -5,39 +5,36 @@
 }
 
 header {
-  /*width: 100%;→不要*/
   height: 50px;
   background-color: #FF9A4B;
 }
 
 main {
   width: 960px;
-  display: flex;
-  /*justify-content: center;→不要*/
   margin: 50px auto;
+  display: flex;
   column-gap: 30px;
 }
 
 .box {
   width: 300px;
   background-color: #EEEEEE;
-  padding: 10px;/*←追加*/
+  padding: 10px;
   position: relative;
-  
 }
 
 .tag {
   background-color: #FF9A4B;
   color: #FFFFFF;
   position: absolute;
-  top: 0;/*←追加*/
-  left: 0;/*←追加*/
+  top: 0;
+  left: 0;
 }
 
 .image {
   height: 150px;
   background-size: cover;
-  background-position: bottom;/*修正「center→bottom」;*/
+  background-position: bottom;
 }
 
 .step1-image {
@@ -57,7 +54,24 @@ main {
 }
 
 footer {
-  /*width: 100%;→不要*/
   height: 50px;
   background-color: #AAAAAA;
+}
+
+@media screen and (max-width:768px) {
+  main {
+    width: 100%;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .box {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .image {
+    width: 100%;
+    background-size: cover;
+  }
 }
